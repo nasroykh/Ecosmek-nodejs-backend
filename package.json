@@ -1,0 +1,40 @@
+{
+  "name": "ecosmek-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd ../client && npm start",
+    "server": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run-script server\" \"npm run-script client\""
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.24",
+    "multer": "^1.4.2",
+    "stripe": "^8.78.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasroykh/E-Cosmek-WebApp-.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "shop"
+  ],
+  "author": "Nas & Ais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasroykh/E-Cosmek-WebApp-/issues"
+  },
+  "homepage": "https://github.com/nasroykh/E-Cosmek-WebApp-#readme"
+}
